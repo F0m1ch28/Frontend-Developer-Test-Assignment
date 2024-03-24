@@ -1,0 +1,23 @@
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .button.yellow {
+    background-color: #ffcc00;
+    color: #000;
+  }
+  
+  .button.yellow:hover {
+    background-color: #ffdd22;
+  }
+  
+  .button.yellow.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  

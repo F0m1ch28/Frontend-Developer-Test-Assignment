@@ -1,0 +1,77 @@
+.card {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-container {
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 80px; 
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.info .position {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.info .email,
+.info .phone {
+  font-size: 1rem;
+  color: #333333;
+}
+
+@media (max-width: 767px) {
+  .users-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 479px) {
+  .users-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .users-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 2559px) {
+  .users-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 2560px) {
+  .users-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
